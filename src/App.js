@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Homepage from "./Homepage";
@@ -8,12 +8,12 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path='/' component={Homepage} exact/>
-          <Route path='/about' component={About} exact/>
-          <Route path='/contact' component={Contact} exact/>
+          <Route path='/' component={Homepage} exact />
+          <Route path='/about' component={About} exact />
+          <Route path='/contact' component={Contact} exact />
         </Switch>
       </Router>
-    </div>      
+    </div>
   );
 }
 
